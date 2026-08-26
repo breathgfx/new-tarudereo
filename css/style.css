@@ -199,7 +199,13 @@ p { margin: 0 0 1em; color: var(--stone); }
   .two-col { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 720px) {
+/* Nav switches to the hamburger/off-canvas menu well before 860px: the full
+   desktop nav (logo + 7 links + 2 buttons) needs ~1010px of content width on
+   its own, so anything narrower than roughly this container's max-width was
+   left with zero (or negative) room and the logo visibly collided with the
+   first nav link — reported at 1080px viewport width. Breakpoint matches
+   --maxw so that above it, .wrap is capped at 1180px and always has slack. */
+@media (max-width: 1180px) {
   .nav-links {
     position: fixed; top: 84px; right: 0; bottom: 0; left: 0;
     /* Explicit height instead of relying on top+bottom to stretch it: this element
@@ -220,6 +226,8 @@ p { margin: 0 0 1em; color: var(--stone); }
   .nav-links a:not(.btn)::after { display: none; }
   .nav-links .btn { width: 100%; justify-content: center; margin-top: 8px; }
   .nav-toggle { display: block; }
+}
+@media (max-width: 720px) {
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
 }
 @media (prefers-reduced-motion: reduce) {
