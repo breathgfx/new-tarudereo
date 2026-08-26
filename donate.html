@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-content="pages.donate.title">Donate — [Organization Name]</title>
+<meta name="description" data-content="pages.donate.metaDescription" data-content-attr="content" content="Support our work with a one-time or monthly gift.">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-content-page="donate">
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="./index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="10" r="5" fill="#C97A3A"/>
+        <path d="M20 15V26" stroke="#16231F" stroke-width="2"/>
+        <path d="M20 26C20 26 10 26 8 34" stroke="#2E6F5E" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 26C20 26 30 26 32 34" stroke="#2E6F5E" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 20C20 20 14 20 12 26" stroke="#8B9A46" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 20C20 20 26 20 28 26" stroke="#8B9A46" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span data-content="site.orgName">[Org Name]</span>
+    </a>
+    <nav class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./programs.html">Programs</a>
+      <a href="./impact.html">Impact</a>
+      <a href="./reports.html">Reports</a>
+      <a href="./locations.html">Locations</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./volunteer.html" class="btn btn-outline">Volunteer</a>
+      <a href="./donate.html" class="btn btn-primary">Donate</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#16231F" stroke-width="2"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="crumb">Donate</span>
+    <h1 data-content="hero.headline">[Your gift goes further than you think.]</h1>
+    <p style="max-width:560px;" data-content="hero.lead">[One or two sentences on how donations are used and the impact of giving.]</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Where Your Donation Goes</span>
+      <h2 data-content="impactTiers.headline">[Every amount funds something specific.]</h2>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 data-content="impactTiers.cards.0.amount">[$25]</h3>
+          <p data-content="impactTiers.cards.0.blurb">[What this amount funds — be specific, e.g. a week of school meals for one child.]</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 data-content="impactTiers.cards.1.amount">[$50]</h3>
+          <p data-content="impactTiers.cards.1.blurb">[What this amount funds — be specific, e.g. a month of clean water access for a family.]</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 data-content="impactTiers.cards.2.amount">[$100]</h3>
+          <p data-content="impactTiers.cards.2.blurb">[What this amount funds — be specific, e.g. one full training-program cycle for a young adult.]</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap two-col">
+    <div>
+      <span class="eyebrow">Give Now</span>
+      <h2 style="font-size:1.6rem;" data-content="give.headline">[Choose an amount and frequency.]</h2>
+      <p data-content="give.body">[One-time gifts help right now; monthly gifts let us plan ahead. Both matter.]</p>
+      <p style="font-size:0.82rem;">[This form is a placeholder — connect it to a real payment processor (Stripe, PayPal, Flutterwave, etc.) before going live. No payment details are collected here.]</p>
+    </div>
+    <form class="contact-form" data-success-message="Thank you — we'll be in touch">
+      <input type="text" name="hp" class="honeypot" tabindex="-1" autocomplete="off">
+      <div>
+        <label for="d-amount">Amount (USD) *</label>
+        <input type="number" id="d-amount" min="1" step="1" placeholder="50" required>
+      </div>
+      <div>
+        <label for="d-frequency">Frequency</label>
+        <select id="d-frequency">
+          <option>One-time</option>
+          <option>Monthly</option>
+        </select>
+      </div>
+      <div>
+        <label for="d-name">Name *</label>
+        <input type="text" id="d-name" required>
+      </div>
+      <div>
+        <label for="d-email">Email *</label>
+        <input type="email" id="d-email" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Donate Now</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo" data-content="site.orgName">[Org Name]</div>
+        <p style="color:rgba(255,255,255,0.6); font-size:0.9rem; max-width:280px;"><span data-content="site.orgName">[Org Name]</span> is dedicated to <span data-content="site.missionSummary">[mission summary in one sentence]</span> across <span data-content="site.region">[region]</span>.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./programs.html">Programs</a>
+        <a href="./impact.html">Impact</a>
+        <a href="./volunteer.html">Volunteer</a>
+      </div>
+      <div>
+        <h4>More</h4>
+        <a href="./reports.html">Reports</a>
+        <a href="./locations.html">Locations</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./donate.html">Donate</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p style="font-size:0.88rem; color:rgba(255,255,255,0.6);" data-content="site.newsletterBlurb">Stay updated on our programs and stories.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed';">
+          <input type="email" placeholder="Email address" required>
+          <button type="submit" class="btn btn-primary">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> <span data-content="site.orgName">[Org Name]</span>. All rights reserved.</span>
+      <span><span data-content="site.cityRegionCountry">[City, Region, Country]</span> · <span data-content="site.email">[email@example.org]</span></span>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner">
+  <p>We use cookies to give you the best experience on <span data-content="site.orgName">[Org Name]</span>.</p>
+  <button class="btn btn-primary" style="padding:9px 18px;">Accept</button>
+</div>
+
+<script src="./js/content.js"></script>
+<script src="./js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

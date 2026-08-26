@@ -1,0 +1,349 @@
+{
+  "site": {
+    "orgName": "[Org Name]",
+    "orgNameFull": "[Organization Name]",
+    "tagline": "[Mission Tagline]",
+    "missionSummary": "[mission summary in one sentence]",
+    "region": "[region]",
+    "email": "[email@example.org]",
+    "phone": "[+000 000 000 000]",
+    "address": "[P.O. Box / Street Address, City, Region, Country]",
+    "cityRegionCountry": "[City, Region, Country]",
+    "newsletterBlurb": "Stay updated on our programs and stories.",
+    "stats": [
+      {
+        "label": "[People Supported]"
+      },
+      {
+        "label": "[Communities Reached]"
+      },
+      {
+        "label": "[Volunteers]"
+      },
+      {
+        "label": "[Years of Service]"
+      }
+    ]
+  },
+  "pages": {
+    "index": {
+      "title": "[Organization Name] — [Mission Tagline]",
+      "metaDescription": "[One-sentence description of the organization and who it serves.]",
+      "hero": {
+        "eyebrow": "[Region / Cause]",
+        "headline": "[Every headline promise your community deserves.]",
+        "lead": "[One or two sentences describing the mission — who you serve, how, and why it matters. Keep it concrete and human.]"
+      },
+      "about": {
+        "headline": "[Founded on a belief worth repeating.]",
+        "body": "[Short paragraph — origin story or guiding philosophy in 2–3 sentences. Reference the community by name and what makes this work distinct.]"
+      },
+      "whereWeWork": {
+        "headline": "[Districts / neighborhoods / regions we serve.]",
+        "cards": [
+          {
+            "name": "[Location One]",
+            "blurb": "[One line describing the program active in this location.]"
+          },
+          {
+            "name": "[Location Two]",
+            "blurb": "[One line describing the program active in this location.]"
+          },
+          {
+            "name": "[Location Three]",
+            "blurb": "[One line describing the program active in this location.]"
+          }
+        ]
+      },
+      "getInvolved": {
+        "headline": "[Your support changes lives — join us.]",
+        "body": "[One sentence on what a contribution funds — shelter, meals, healthcare, etc.]"
+      },
+      "partners": [
+        "[Partner One]",
+        "[Partner Two]",
+        "[Partner Three]",
+        "[Partner Four]"
+      ]
+    },
+    "about": {
+      "title": "About Us — [Organization Name]",
+      "metaDescription": "Our mission, vision, values, and story.",
+      "hero": {
+        "headline": "[Like the symbol in our mark, we lift up those who built our community.]",
+        "lead": "[One or two sentences framing the org's belief and who it serves.]"
+      },
+      "mission": {
+        "headline": "[To provide holistic support so every person we serve lives with dignity.]",
+        "body": "[Expand on the mission — what you provide (shelter/care/training/etc.) and the outcome you're working toward.]"
+      },
+      "vision": {
+        "headline": "[A community where every person we serve is valued and protected.]",
+        "body": "[Expand on the long-term vision for the community or cause.]"
+      },
+      "values": {
+        "headline": "[What guides every program we run.]",
+        "items": [
+          {
+            "title": "[Value One]",
+            "body": "[One-line description of the value in action.]"
+          },
+          {
+            "title": "[Value Two]",
+            "body": "[One-line description of the value in action.]"
+          },
+          {
+            "title": "[Value Three]",
+            "body": "[One-line description of the value in action.]"
+          },
+          {
+            "title": "[Value Four]",
+            "body": "[One-line description of the value in action.]"
+          }
+        ]
+      },
+      "story": {
+        "headline": "[Founded in [Year] by [founders/community leaders].]",
+        "body": "[Two to four sentences telling the origin story — how it started small and grew, and who has supported it along the way (local government, faith groups, international partners, etc.).]"
+      }
+    },
+    "contact": {
+      "title": "Contact Us — [Organization Name]",
+      "metaDescription": "Get in touch — funding, volunteering, and partnerships.",
+      "hero": {
+        "headline": "[Get in touch]",
+        "lead": "[One sentence inviting funding, volunteering, or partnership conversations.]"
+      },
+      "reachUs": {
+        "headline": "[Office / Landmark Description]"
+      }
+    },
+    "volunteer": {
+      "title": "Volunteer — [Organization Name]",
+      "metaDescription": "Give your time and skills to support our work.",
+      "hero": {
+        "headline": "[Give your time. Change a life.]",
+        "lead": "[One or two sentences on what volunteering with us looks like and who we're looking for.]"
+      },
+      "whyVolunteer": {
+        "headline": "[Real work, real impact, real community.]",
+        "body": "[Two to three sentences on what volunteers actually do day-to-day, and the difference it makes for the people you serve.]"
+      },
+      "waysToHelp": {
+        "headline": "[Find the role that fits your time and skills.]",
+        "cards": [
+          { "name": "[Weekend Programs]", "blurb": "[Hands-on shifts at our locations — meal prep, tutoring, activity support.]" },
+          { "name": "[Skilled Volunteering]", "blurb": "[Bring professional skills — medical, legal, design, accounting — on a project basis.]" },
+          { "name": "[Remote & Admin Support]", "blurb": "[Help from anywhere — data entry, grant research, social media, translation.]" },
+          { "name": "[Event Volunteering]", "blurb": "[One-off support at fundraisers, community days, and awareness campaigns.]" }
+        ]
+      },
+      "apply": {
+        "headline": "[Tell us a bit about yourself.]",
+        "body": "[We'll follow up within a week to talk through current openings and next steps.]"
+      }
+    },
+    "donate": {
+      "title": "Donate — [Organization Name]",
+      "metaDescription": "Support our work with a one-time or monthly gift.",
+      "hero": {
+        "headline": "[Your gift goes further than you think.]",
+        "lead": "[One or two sentences on how donations are used and the impact of giving.]"
+      },
+      "impactTiers": {
+        "headline": "[Every amount funds something specific.]",
+        "cards": [
+          { "amount": "[$25]", "blurb": "[What this amount funds — be specific, e.g. a week of school meals for one child.]" },
+          { "amount": "[$50]", "blurb": "[What this amount funds — be specific, e.g. a month of clean water access for a family.]" },
+          { "amount": "[$100]", "blurb": "[What this amount funds — be specific, e.g. one full training-program cycle for a young adult.]" }
+        ]
+      },
+      "give": {
+        "headline": "[Choose an amount and frequency.]",
+        "body": "[One-time gifts help right now; monthly gifts let us plan ahead. Both matter.]"
+      }
+    },
+    "impact": {
+      "title": "Our Impact — [Organization Name]",
+      "metaDescription": "The measurable difference we're making.",
+      "hero": {
+        "headline": "[Making a measurable difference, together.]"
+      },
+      "transformingLives": {
+        "headline": "[Every number represents a real person.]",
+        "body1": "[Two to three sentences translating the stats into human stories — without naming real individuals unless you have consent.]",
+        "body2": "[Optional paragraph on sustainability — how programs are designed to outlast a single funding cycle.]"
+      },
+      "lookingAhead": {
+        "headline": "[By [target year], we aim to [specific, measurable goal].]"
+      }
+    },
+    "locations": {
+      "title": "Locations — [Organization Name]",
+      "metaDescription": "Where we work.",
+      "hero": {
+        "headline": "[Where we work across [region].]"
+      },
+      "cards": [
+        {
+          "name": "[Location One]",
+          "blurb": "[Our flagship urban center — daily health screenings, meals, and after-school tutoring.]"
+        },
+        {
+          "name": "[Location Two]",
+          "blurb": "[A rural outreach post bringing mobile clinics and farming training to nearby villages.]"
+        },
+        {
+          "name": "[Location Three]",
+          "blurb": "[Our newest site, supporting coastal and fishing communities with training and relief programs.]"
+        }
+      ]
+    },
+    "programs": {
+      "title": "Our Programs — [Organization Name]",
+      "metaDescription": "Browse our program areas.",
+      "hero": {
+        "headline": "[Comprehensive initiatives designed to serve our community.]"
+      },
+      "cards": [
+        {
+          "name": "[Program One Name]",
+          "blurb": "[Community health screenings, nutrition support, and maternal care for local families.]"
+        },
+        {
+          "name": "[Program Two Name]",
+          "blurb": "[After-school tutoring and adult literacy classes for students and parents alike.]"
+        },
+        {
+          "name": "[Program Three Name]",
+          "blurb": "[Vocational training and small-business support to help young adults build sustainable income.]"
+        },
+        {
+          "name": "[Program Four Name]",
+          "blurb": "[Rapid-response relief — emergency kits and shelter coordination during floods and storms.]"
+        }
+      ],
+      "ctaText": "Want to support a specific program?"
+    },
+    "reports": {
+      "title": "Reports — [Organization Name]",
+      "metaDescription": "Annual reports and financial transparency.",
+      "hero": {
+        "headline": "[Annual Reports & Transparency]",
+        "lead": "[One sentence on your commitment to accountability with donors, partners, and the community.]"
+      },
+      "items": [
+        {
+          "year": "[Year]",
+          "title": "[Annual Report [Year]]",
+          "fileSize": "[File size]",
+          "href": "#"
+        }
+      ]
+    },
+    "locationDetailTemplate": {
+      "title": "[Location Name] — [Organization Name]",
+      "hero": {
+        "name": "[Location Name]",
+        "blurb": "[One-line description repeated for context.]"
+      },
+      "localPresence": {
+        "headline": "[What we run here.]",
+        "body": "[Two to three sentences on programs active at this location, partners involved, and reach.]"
+      }
+    },
+    "locationDetail1": {
+      "title": "[Location One] — [Organization Name]",
+      "hero": {
+        "name": "[Location One]",
+        "blurb": "[Our flagship urban center — daily health screenings, meals, and after-school tutoring.]"
+      },
+      "localPresence": {
+        "headline": "[A hub for daily services in the city center.]",
+        "body": "[Two to three sentences on programs active at this location — e.g., drop-in health screenings, meal distribution, and after-school tutoring running most weekdays, plus which local partners help staff it.]"
+      }
+    },
+    "locationDetail2": {
+      "title": "[Location Two] — [Organization Name]",
+      "hero": {
+        "name": "[Location Two]",
+        "blurb": "[A rural outreach post bringing mobile clinics and farming training to nearby villages.]"
+      },
+      "localPresence": {
+        "headline": "[Bringing services closer to home for outlying communities.]",
+        "body": "[Two to three sentences on programs active at this location — e.g., a monthly mobile clinic visit, agricultural training sessions, and a weekly meeting space run in partnership with village leaders.]"
+      }
+    },
+    "locationDetail3": {
+      "title": "[Location Three] — [Organization Name]",
+      "hero": {
+        "name": "[Location Three]",
+        "blurb": "[Our newest site, supporting coastal and fishing communities with training and relief programs.]"
+      },
+      "localPresence": {
+        "headline": "[Extending our reach along the coast.]",
+        "body": "[Two to three sentences on programs active at this location — e.g., vocational training for young adults, a small community library, and seasonal relief support during storm season.]"
+      }
+    },
+    "programDetailTemplate": {
+      "title": "[Program Name] — [Organization Name]",
+      "hero": {
+        "name": "[Program Name]",
+        "blurb": "[One-line summary shown in the card, repeated here for context.]"
+      },
+      "howItWorks": {
+        "headline": "[What this program does, day to day.]",
+        "body1": "[Two to three sentences describing activities, frequency, and who runs them.]",
+        "body2": "[Optional second paragraph — impact story, numbers, or a specific example.]"
+      }
+    },
+    "programDetail1": {
+      "title": "[Program One Name] — [Organization Name]",
+      "hero": {
+        "name": "[Program One Name]",
+        "blurb": "[Community health screenings, nutrition support, and maternal care for local families.]"
+      },
+      "howItWorks": {
+        "headline": "[Keeping families healthy through preventive care.]",
+        "body1": "[Two to three sentences describing activities, frequency, and who runs them — e.g., weekly clinics, nutrition education sessions, and referrals to partner hospitals for follow-up care.]",
+        "body2": "[Optional second paragraph — e.g., the number of screenings or check-ups completed this year, or a specific family's story.]"
+      }
+    },
+    "programDetail2": {
+      "title": "[Program Two Name] — [Organization Name]",
+      "hero": {
+        "name": "[Program Two Name]",
+        "blurb": "[After-school tutoring and adult literacy classes for students and parents alike.]"
+      },
+      "howItWorks": {
+        "headline": "[Building skills that open doors.]",
+        "body1": "[Two to three sentences describing activities, frequency, and who runs them — e.g., after-school tutoring schedule, volunteer teachers, and learning materials provided to students.]",
+        "body2": "[Optional second paragraph — e.g., a specific student or class success story.]"
+      }
+    },
+    "programDetail3": {
+      "title": "[Program Three Name] — [Organization Name]",
+      "hero": {
+        "name": "[Program Three Name]",
+        "blurb": "[Vocational training and small-business support to help young adults build sustainable income.]"
+      },
+      "howItWorks": {
+        "headline": "[Turning skills into sustainable income.]",
+        "body1": "[Two to three sentences describing activities, frequency, and who runs them — e.g., training tracks offered, apprenticeship partners, and job placement support.]",
+        "body2": "[Optional second paragraph — e.g., graduate outcomes or a small business launched through the program.]"
+      }
+    },
+    "programDetail4": {
+      "title": "[Program Four Name] — [Organization Name]",
+      "hero": {
+        "name": "[Program Four Name]",
+        "blurb": "[Rapid-response relief — emergency kits and shelter coordination during floods and storms.]"
+      },
+      "howItWorks": {
+        "headline": "[Ready to respond when disaster strikes.]",
+        "body1": "[Two to three sentences describing activities, frequency, and who runs them — e.g., emergency kits distributed, shelter coordination, and partnerships with local disaster-response teams.]",
+        "body2": "[Optional second paragraph — e.g., a recent response effort and its outcome.]"
+      }
+    }
+  }
+}
