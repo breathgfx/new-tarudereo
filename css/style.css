@@ -86,7 +86,7 @@ p { margin: 0 0 1em; color: var(--stone); }
   height: 84px;
 }
 .logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; }
-.logo-mark { width: 34px; height: 34px; }
+.logo-mark { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
 .nav-links { display: flex; align-items: center; gap: 30px; }
 .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--ink); position: relative; }
 .nav-links a:not(.btn)::after {
@@ -99,7 +99,9 @@ p { margin: 0 0 1em; color: var(--stone); }
 /* ---- hero ---- */
 .hero {
   position: relative; overflow: hidden;
-  background: linear-gradient(160deg, var(--ink) 0%, #223A31 60%, var(--teal-dark) 100%);
+  background:
+    linear-gradient(160deg, rgba(22,35,31,0.88) 0%, rgba(34,58,49,0.78) 60%, rgba(31,79,66,0.82) 100%),
+    url('../img/hero-maternal-health.jpg') center/cover no-repeat;
   color: #fff; padding: 120px 0 100px;
 }
 .hero .roots { position: absolute; inset: 0; opacity: 0.18; pointer-events: none; }

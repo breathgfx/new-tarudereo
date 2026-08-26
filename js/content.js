@@ -5,7 +5,8 @@
 //
 // Path rules:
 //   "site.foo.bar"   -> content.site.foo.bar        (shared across all pages)
-//   "foo.bar"         -> content.pages[pageKey].foo.bar (this page only)
+//   "pages.x.foo.bar" -> content.pages.x.foo.bar     (absolute — any page's data)
+//   "foo.bar"         -> content.pages[pageKey].foo.bar (this page only, relative)
 //
 // The page key comes from data-content-page="..." on <body>.
 //
@@ -24,8 +25,8 @@
     document.querySelectorAll('[data-content]').forEach((el) => {
       const path = el.getAttribute('data-content');
       let value;
-      if (path.startsWith('site.')) {
-        value = resolvePath(content.site, path.slice(5));
+      if (path.startsWith('site.') || path.startsWith('pages.')) {
+        value = resolvePath(content, path);
       } else if (pageData) {
         value = resolvePath(pageData, path);
       }
