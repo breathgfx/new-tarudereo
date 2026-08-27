@@ -186,6 +186,27 @@ p { margin: 0 0 1em; color: var(--stone); }
 .cookie-banner p { color: rgba(255,255,255,0.75); font-size: 0.85rem; margin: 0; }
 .cookie-banner button { flex-shrink: 0; }
 
+/* ---- back to top ---- */
+.back-to-top {
+  position: fixed; right: 24px; bottom: 24px; z-index: 80;
+  width: 46px; height: 46px; border-radius: 50%; border: none;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--ink); color: var(--paper); cursor: pointer;
+  box-shadow: 0 10px 24px rgba(22, 35, 31, 0.22);
+  opacity: 0; visibility: hidden; transform: translateY(12px);
+  transition: opacity .25s ease, transform .25s ease, background .2s ease;
+}
+.back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--teal-dark); }
+.back-to-top svg { width: 18px; height: 18px; }
+/* Shift up while the cookie banner is showing so they don't overlap
+   (the banner runs nearly full-width on small screens). */
+.cookie-banner.show ~ .back-to-top { bottom: 96px; }
+@media (max-width: 480px) {
+  .back-to-top { right: 16px; bottom: 16px; }
+  .cookie-banner.show ~ .back-to-top { bottom: 110px; }
+}
+
 /* ---- page hero (inner pages) ---- */
 .page-hero { padding: 64px 0 54px; border-bottom: 1px solid var(--line); }
 .page-hero .crumb { font-size: 0.85rem; color: var(--teal-dark); font-weight: 600; margin-bottom: 10px; display: inline-block; }

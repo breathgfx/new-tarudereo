@@ -7,6 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
     links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
   }
 
+  // Back to top
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    const toggleBackToTop = () => backToTop.classList.toggle('show', window.scrollY > 500);
+    window.addEventListener('scroll', toggleBackToTop, { passive: true });
+    toggleBackToTop();
+    backToTop.addEventListener('click', () => {
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+  }
+
   // Cookie banner
   const banner = document.querySelector('.cookie-banner');
   if (banner) {
