@@ -1,48 +1,51 @@
-# NGO Site Template
+# TARUDEREO Site
 
-A reusable, plain HTML/CSS/JS template for community-org / NGO-style websites.
-Structure (nav, hero, stats, program & location card grids, reports list, contact
-form, footer) is modeled on common nonprofit site patterns, but the visual design
-(palette, type, logo mark, "root line" motif) is original — safe to use as a base
-for multiple client sites.
+Plain HTML/CSS/JS site for TARUDEREO (Tanzania Rural Development and Relief
+Organization), a registered NGO in Kasulu, Kigoma Region. Content is
+data-driven (see [`content.json`](content.json) below) so copy can be edited
+without touching HTML.
 
 ## Files
 
 ```
-index.html            Homepage
-about.html             Mission / Vision / Values / Story
-programs.html          Program listing (card grid)
-program-detail.html    Single program page (duplicate per program)
-locations.html         Location/branch listing (card grid)
-location-detail.html   Single location page (duplicate per location)
-impact.html            Stats + narrative + forward-looking goals
-reports.html           Downloadable annual reports list
-contact.html           Address/email/phone + contact form
-css/style.css          All design tokens + component styles
-js/main.js             Mobile nav, cookie banner, animated counters, form UX
+index.html               Homepage — hero, Who We Are, focus areas teaser, CTA
+about.html                Who We Are / Mission / Vision / Story
+focus-areas.html          The 5 strategic focus areas (Environment, Health, Agriculture, Education, Micro-Economic Development)
+programmes.html           How programmes are developed (currently a holding page — no named programmes yet)
+impact.html               What TARUDEREO documents + its accountability commitment
+why-kigoma.html           Why the org focuses its work in Kigoma Region
+partnership.html          Partnership types + partnership inquiry form
+transparency.html         Governance commitment + organisational documents (Org Profile, Annual Reports, Policies, Financial Info)
+resources.html            Links to org info, reports, publications, community stories
+community-stories.html    Placeholder for community story content
+support.html              Donation page (one-time/monthly gift form)
+contact.html              Address/email/phone/website + contact form
+content.json              All editable copy — read at runtime by js/content.js
+css/style.css             All design tokens + component styles
+js/main.js                Mobile nav, cookie banner, back-to-top, form UX
+js/content.js             Reads content.json and fills every data-content="..." element
+admin/                    Custom PHP admin panel for editing content.json + logo/hero photo (see below)
 ```
 
-## To customize for a new client site
+## To customize
 
 1. **Brand colors/type** — edit the `:root` variables at the top of `css/style.css`
    (`--ink`, `--paper`, `--teal`, `--ochre`, `--olive`, `--stone`) and the two
    Google Fonts in the `@import` line. Everything else inherits automatically.
-2. **Logo mark** — replace the inline `<svg class="logo-mark">` in each page's
-   header with the client's own icon (keep it ~34×34).
-3. **Copy** — every `[bracketed placeholder]` is a spot to fill in: org name,
-   mission text, stats, program names, addresses, etc. Search for `[` to find them all.
-4. **Photography** — the card/hero media blocks currently use flat gradient
-   placeholders (`.card-media`, `.hero .roots`). Swap in real photos via
-   `background-image` or an `<img>` inside `.card-media` once you have licensed
-   images for that client — don't reuse another organization's photos.
-5. **Duplicate detail pages** — copy `program-detail.html` /
-   `location-detail.html` once per program/location and update the content and
-   filename, then point the card `href`s at the new files.
-6. **Contact form backend** — `js/main.js` currently just shows a "Message sent"
-   confirmation client-side. Wire the form to a real endpoint (Formspree, your
-   own API, etc.) before going live.
-7. **Reports** — add one `.card` per year in `reports.html`, linking to the
-   actual PDF file.
+2. **Logo / hero photo** — `img/logo.png` and `img/hero-maternal-health.jpg`.
+   Swap either file directly (same filename) via `/admin`, or by hand — every
+   page references them by that exact path.
+3. **Copy** — edit [`content.json`](content.json) directly, or through `/admin`
+   (see the section below). No HTML file needs touching for a text change.
+4. **Adding a page** — there's no template-duplication step anymore (that was
+   the old Locations/Program-Detail pattern, since removed): copy the closest
+   existing page's structure, add a matching entry under `pages` in
+   `content.json`, and add the nav link across all pages' `<nav class="nav-links">`
+   and footer `<div class="footer-grid">`.
+5. **Contact/partnership/donation forms** — `js/main.js` currently just shows
+   a client-side confirmation message. Wire them to a real endpoint (Formspree,
+   your own API, etc.) and a real payment processor for `support.html` before
+   going live.
 
 ## Content management (custom PHP admin)
 

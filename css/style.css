@@ -95,7 +95,11 @@ p { margin: 0 0 1em; color: var(--stone); }
 }
 .logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; }
 .logo-mark { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
-.nav-links { display: flex; align-items: center; gap: 30px; }
+/* gap kept tight (not 30px) so the nav — now 7 links + 2 CTA buttons, some
+   with longer labels like "Focus Areas"/"Partner With Us" — actually fits
+   within --maxw (1180px, which .wrap is capped at regardless of viewport
+   width) with real safety margin instead of sitting right at the edge. */
+.nav-links { display: flex; align-items: center; gap: 18px; }
 .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--ink); position: relative; }
 .nav-links a:not(.btn)::after {
   content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px;
