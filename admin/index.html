@@ -6,11 +6,17 @@
   <title>Content Manager — TARUDEREO</title>
 </head>
 <body>
-  <!-- Netlify Identity handles login; Git Gateway lets it commit to the repo
-       on the logged-in user's behalf without them needing their own GitHub
-       account/token. Both are enabled from the Netlify dashboard, not here —
-       see the setup notes in README.md. -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- Decap's git-gateway backend bundles its own GoTrue client internally
+       and reads config.yml's identity_url/gateway_url (pointed at DecapBridge)
+       to build it correctly on its own.
+
+       Do NOT also load netlify-identity-widget.js here: if window.netlifyIdentity
+       exists, Decap's getAuthClient() defers entirely to that global instead of
+       building its own client from identity_url — silently ignoring the
+       DecapBridge config and falling back to the widget's hardcoded default
+       (https://<this-domain>/.netlify/identity), which 404s and throws
+       "Unable to access identity settings." That's the one bug this comment
+       is here to stop someone from reintroducing. -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
