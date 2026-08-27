@@ -28,6 +28,14 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+/* The off-canvas mobile nav sits at `transform: translateX(100%)` when closed,
+   pushing its box past the right edge of the viewport. Boxes with
+   position:fixed aren't supposed to add to the page's scrollable area, but
+   browsers do let them — so that off-canvas panel was creating a real
+   horizontal scrollbar, and scrolling it into view showed the "hidden" menu
+   sitting there as if it were normal page content. html+body overflow-x:hidden
+   clips that (nothing on this site intentionally scrolls horizontally). */
+html, body { overflow-x: hidden; }
 body {
   margin: 0;
   font-family: var(--font-body);
