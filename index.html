@@ -185,19 +185,5 @@
 <script src="js/content.js"></script>
 <script src="js/main.js"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<!-- Netlify Identity invite/confirmation links land here (the site root) with
-     a #token in the URL. This catches that and hands off to the CMS login at
-     /admin/ instead of leaving the visitor stranded on the homepage. Harmless
-     on GitHub Pages or any other host — it just does nothing there. -->
-<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('init', (user) => {
-      if (!user) {
-        window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
-      }
-    });
-  }
-</script>
 </body>
 </html>

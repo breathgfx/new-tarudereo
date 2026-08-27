@@ -1,0 +1,87 @@
+/* Admin-only styles, layered on top of the main site's design tokens
+   (css/style.css is linked before this file on every admin page). */
+
+body.admin-body { background: var(--paper-soft); padding-bottom: 80px; }
+
+.admin-header {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--ink); color: #fff;
+  padding: 18px 28px;
+}
+.admin-header h1 { font-size: 1.15rem; margin: 0; color: #fff; }
+
+.admin-flash {
+  margin: 20px 28px 0; padding: 12px 16px; border-radius: var(--radius);
+  font-size: 0.92rem; font-weight: 600;
+}
+.admin-flash-success { background: rgba(46, 111, 94, 0.15); color: var(--teal-dark); }
+.admin-flash-error { background: rgba(201, 122, 58, 0.15); color: #a34e17; }
+
+.admin-form { max-width: 860px; margin: 0 auto; padding: 28px; }
+.admin-section {
+  background: #fff; border: 1px solid var(--line); border-radius: 8px;
+  padding: 22px 24px; margin-bottom: 24px;
+}
+.admin-section h2 { font-size: 1.1rem; margin: 0 0 16px; }
+
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--stone); margin-bottom: 5px; }
+.field input[type="text"], .field textarea {
+  width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius);
+  font-family: var(--font-body); font-size: 0.95rem; background: var(--paper-soft); color: var(--ink);
+}
+.field textarea { resize: vertical; }
+.field input[type="text"]:focus, .field textarea:focus {
+  outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(46, 111, 94, 0.15);
+}
+
+.admin-group {
+  border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px 4px;
+  margin: 0 0 16px;
+}
+.admin-group > legend { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--teal-dark); padding: 0 6px; }
+.admin-group .admin-group { background: var(--paper-soft); }
+
+.admin-list-item {
+  border-left: 3px solid var(--ochre); padding-left: 14px; margin-bottom: 18px;
+}
+.admin-list-item-label { font-size: 0.85rem; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+
+details.admin-page { margin-bottom: 10px; }
+details.admin-page > summary {
+  cursor: pointer; font-weight: 700; padding: 14px 16px; background: #fff;
+  border: 1px solid var(--line); border-radius: 8px; list-style: none;
+}
+details.admin-page > summary::-webkit-details-marker { display: none; }
+details.admin-page > summary::before { content: '▸ '; color: var(--ochre); }
+details.admin-page[open] > summary::before { content: '▾ '; }
+details.admin-page[open] > summary { border-radius: 8px 8px 0 0; border-bottom: none; }
+details.admin-page > *:not(summary) { border: 1px solid var(--line); border-top: none; border-radius: 0 0 8px 8px; padding: 18px; background: #fff; }
+
+.admin-preview {
+  display: block; width: 96px; height: 96px; object-fit: cover; border-radius: 50%;
+  border: 1px solid var(--line); margin-bottom: 10px; background: var(--paper-soft);
+}
+.admin-preview-wide { width: 100%; max-width: 420px; height: 180px; border-radius: 8px; object-fit: cover; }
+
+.admin-save-bar { position: sticky; bottom: 0; padding: 16px 0; }
+.admin-save-bar .btn { width: 100%; justify-content: center; padding: 14px; font-size: 1rem; }
+
+/* --- login page --- */
+body.admin-login-body {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: var(--ink);
+}
+.admin-login-form {
+  background: var(--paper); border-radius: 10px; padding: 36px 32px;
+  width: 100%; max-width: 340px; box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+.admin-login-form h1 { font-size: 1.3rem; margin-bottom: 20px; text-align: center; }
+.admin-login-form label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
+.admin-login-form input {
+  width: 100%; padding: 11px 13px; border: 1px solid var(--line); border-radius: var(--radius);
+  font-family: var(--font-body); margin-bottom: 16px; background: var(--paper-soft); color: var(--ink);
+}
+.admin-login-form .btn { width: 100%; justify-content: center; }
+.admin-error { background: rgba(201, 122, 58, 0.15); color: #a34e17; padding: 10px 12px; border-radius: var(--radius); font-size: 0.88rem; margin-bottom: 16px; }

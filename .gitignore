@@ -1,0 +1,3 @@
+# Holds the real admin password hash for this specific deployment — never commit it.
+# Copy admin/config.sample.php to admin/config.local.php and set your own password.
+admin/config.local.php

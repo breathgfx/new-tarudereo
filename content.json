@@ -1,370 +1,370 @@
 {
-  "site": {
-    "orgName": "TARUDEREO",
-    "orgNameFull": "Tanzania Rural Development and Relief Organization (TARUDEREO)",
-    "tagline": "NGO in Kasulu, Kigoma Region, Tanzania",
-    "missionSummary": "improving the living standards of rural Tanzanians through health, education, and community development",
-    "region": "Kasulu District, Kigoma Region",
-    "email": "info@tarudereo.or.tz",
-    "phone": "+255 769 906 172 / +255 7132 647 033",
-    "address": "Kibondo Road Street, Rungwe Mpya Ward, Kasulu District, Kigoma Region, P.O. Box 101",
-    "cityRegionCountry": "Kasulu, Kigoma Region, Tanzania",
-    "newsletterBlurb": "Stay updated on our programs and stories.",
-    "stats": [
-      {
-        "label": "Year Founded"
-      },
-      {
-        "label": "Re-registered Under NGO Act"
-      },
-      {
-        "label": "Core Objectives"
-      },
-      {
-        "label": "Team & Advisors"
-      }
-    ]
-  },
-  "pages": {
-    "index": {
-      "title": "TARUDEREO — NGO in Kasulu, Kigoma Region, Tanzania",
-      "metaDescription": "TARUDEREO is a registered NGO based in Kasulu, Kigoma Region, Tanzania, working on maternal health, education for vulnerable children, women's economic empowerment, and rural community development.",
-      "hero": {
-        "eyebrow": "Kasulu · Kigoma Region · Tanzania",
-        "headline": "Building Dignity, Health & Opportunity in Rural Kigoma",
-        "lead": "TARUDEREO is a registered NGO based in Kasulu, working alongside rural communities on maternal health, education for vulnerable children, women's and youth economic empowerment, and community development."
-      },
-      "about": {
-        "headline": "What is TARUDEREO?",
-        "body": "Tanzania Rural Development and Relief Organization (TARUDEREO) is a non-governmental, nonprofit organization improving the living standards of Tanzanians through water and sanitation, community services, natural resource and environmental protection, infrastructure development, and humanitarian assistance."
-      },
-      "whereWeWork": {
-        "headline": "[Districts / neighborhoods / regions we serve.]",
-        "cards": [
-          {
-            "name": "[Location One]",
-            "blurb": "[One line describing the program active in this location.]"
-          },
-          {
-            "name": "[Location Two]",
-            "blurb": "[One line describing the program active in this location.]"
-          },
-          {
-            "name": "[Location Three]",
-            "blurb": "[One line describing the program active in this location.]"
-          }
+    "site": {
+        "orgName": "TARUDEREO",
+        "orgNameFull": "Tanzania Rural Development and Relief Organization (TARUDEREO)",
+        "tagline": "NGO in Kasulu, Kigoma Region, Tanzania",
+        "missionSummary": "improving the living standards of rural Tanzanians through health, education, and community development",
+        "region": "Kasulu District, Kigoma Region",
+        "email": "info@tarudereo.or.tz",
+        "phone": "+255 769 906 172 / +255 7132 647 033",
+        "address": "Kibondo Road Street, Rungwe Mpya Ward, Kasulu District, Kigoma Region, P.O. Box 101",
+        "cityRegionCountry": "Kasulu, Kigoma Region, Tanzania",
+        "newsletterBlurb": "Stay updated on our programs and stories. [ADMIN TEST EDIT]",
+        "stats": [
+            {
+                "label": "2002"
+            },
+            {
+                "label": "Re-registered Under NGO Act"
+            },
+            {
+                "label": "Core Objectives"
+            },
+            {
+                "label": "Team & Advisors"
+            }
         ]
-      },
-      "getInvolved": {
-        "headline": "Your Support Changes Lives",
-        "body": "Every contribution helps us reach more mothers, children, and families across Kasulu District with health, education, and economic opportunity."
-      },
-      "partners": [
-        "[Partner One]",
-        "[Partner Two]",
-        "[Partner Three]",
-        "[Partner Four]"
-      ]
     },
-    "about": {
-      "title": "About Us — TARUDEREO",
-      "metaDescription": "Our mission, vision, values, and story.",
-      "hero": {
-        "headline": "[Like the symbol in our mark, we lift up those who built our community.]",
-        "lead": "[One or two sentences framing the org's belief and who it serves.]"
-      },
-      "mission": {
-        "headline": "What is TARUDEREO?",
-        "body": "Tanzania Rural Development and Relief Organization (TARUDEREO) is a non-governmental, nonprofit organization improving the living standards of Tanzanians through water and sanitation, community services, natural resource and environmental protection, infrastructure development, and humanitarian assistance."
-      },
-      "vision": {
-        "headline": "[A community where every person we serve is valued and protected.]",
-        "body": "[Expand on the long-term vision for the community or cause.]"
-      },
-      "values": {
-        "headline": "[What guides every program we run.]",
-        "items": [
-          {
-            "title": "[Value One]",
-            "body": "[One-line description of the value in action.]"
-          },
-          {
-            "title": "[Value Two]",
-            "body": "[One-line description of the value in action.]"
-          },
-          {
-            "title": "[Value Three]",
-            "body": "[One-line description of the value in action.]"
-          },
-          {
-            "title": "[Value Four]",
-            "body": "[One-line description of the value in action.]"
-          }
-        ]
-      },
-      "story": {
-        "headline": "Registered Since 2002, Re-registered in 2023",
-        "body": "Based in Mission Street, Murubona Ward, Kasulu District, Kigoma Region, TARUDEREO is registered by the Ministry of Community Development, Gender, Women and Special Groups under the NGO Act No. 24 (Certificate No. ooNGO/R/5461, issued 29 September 2023)."
-      }
-    },
-    "contact": {
-      "title": "Contact Us — TARUDEREO",
-      "metaDescription": "Get in touch — funding, volunteering, and partnerships.",
-      "hero": {
-        "headline": "[Get in touch]",
-        "lead": "[One sentence inviting funding, volunteering, or partnership conversations.]"
-      },
-      "reachUs": {
-        "headline": "[Office / Landmark Description]"
-      }
-    },
-    "volunteer": {
-      "title": "Volunteer — TARUDEREO",
-      "metaDescription": "Give your time and skills to support our work.",
-      "hero": {
-        "headline": "[Give your time. Change a life.]",
-        "lead": "[One or two sentences on what volunteering with us looks like and who we're looking for.]"
-      },
-      "whyVolunteer": {
-        "headline": "[Real work, real impact, real community.]",
-        "body": "[Two to three sentences on what volunteers actually do day-to-day, and the difference it makes for the people you serve.]"
-      },
-      "waysToHelp": {
-        "headline": "[Find the role that fits your time and skills.]",
-        "cards": [
-          {
-            "name": "[Weekend Programs]",
-            "blurb": "[Hands-on shifts at our locations — meal prep, tutoring, activity support.]"
-          },
-          {
-            "name": "[Skilled Volunteering]",
-            "blurb": "[Bring professional skills — medical, legal, design, accounting — on a project basis.]"
-          },
-          {
-            "name": "[Remote & Admin Support]",
-            "blurb": "[Help from anywhere — data entry, grant research, social media, translation.]"
-          },
-          {
-            "name": "[Event Volunteering]",
-            "blurb": "[One-off support at fundraisers, community days, and awareness campaigns.]"
-          }
-        ]
-      },
-      "apply": {
-        "headline": "[Tell us a bit about yourself.]",
-        "body": "[We'll follow up within a week to talk through current openings and next steps.]"
-      }
-    },
-    "donate": {
-      "title": "Donate — TARUDEREO",
-      "metaDescription": "Support our work with a one-time or monthly gift.",
-      "hero": {
-        "headline": "[Your gift goes further than you think.]",
-        "lead": "[One or two sentences on how donations are used and the impact of giving.]"
-      },
-      "impactTiers": {
-        "headline": "[Every amount funds something specific.]",
-        "cards": [
-          {
-            "amount": "[$25]",
-            "blurb": "[What this amount funds — be specific, e.g. a week of school meals for one child.]"
-          },
-          {
-            "amount": "[$50]",
-            "blurb": "[What this amount funds — be specific, e.g. a month of clean water access for a family.]"
-          },
-          {
-            "amount": "[$100]",
-            "blurb": "[What this amount funds — be specific, e.g. one full training-program cycle for a young adult.]"
-          }
-        ]
-      },
-      "give": {
-        "headline": "[Choose an amount and frequency.]",
-        "body": "[One-time gifts help right now; monthly gifts let us plan ahead. Both matter.]"
-      }
-    },
-    "impact": {
-      "title": "Our Impact — TARUDEREO",
-      "metaDescription": "The measurable difference we're making.",
-      "hero": {
-        "headline": "[Making a measurable difference, together.]"
-      },
-      "transformingLives": {
-        "headline": "[Every number represents a real person.]",
-        "body1": "[Two to three sentences translating the stats into human stories — without naming real individuals unless you have consent.]",
-        "body2": "[Optional paragraph on sustainability — how programs are designed to outlast a single funding cycle.]"
-      },
-      "lookingAhead": {
-        "headline": "[By [target year], we aim to [specific, measurable goal].]"
-      }
-    },
-    "locations": {
-      "title": "Locations — TARUDEREO",
-      "metaDescription": "Where we work.",
-      "hero": {
-        "headline": "[Where we work across [region].]"
-      },
-      "cards": [
-        {
-          "name": "[Location One]",
-          "blurb": "[Our flagship urban center — daily health screenings, meals, and after-school tutoring.]"
+    "pages": {
+        "index": {
+            "title": "TARUDEREO — NGO in Kasulu, Kigoma Region, Tanzania",
+            "metaDescription": "TARUDEREO is a registered NGO based in Kasulu, Kigoma Region, Tanzania, working on maternal health, education for vulnerable children, women's economic empowerment, and rural community development.",
+            "hero": {
+                "eyebrow": "Kasulu · Kigoma Region · Tanzania",
+                "headline": "Building Dignity, Health & Opportunity in Rural Kigoma",
+                "lead": "TARUDEREO is a registered NGO based in Kasulu, working alongside rural communities on maternal health, education for vulnerable children, women's and youth economic empowerment, and community development."
+            },
+            "about": {
+                "headline": "What is TARUDEREO?",
+                "body": "Tanzania Rural Development and Relief Organization (TARUDEREO) is a non-governmental, nonprofit organization improving the living standards of Tanzanians through water and sanitation, community services, natural resource and environmental protection, infrastructure development, and humanitarian assistance."
+            },
+            "whereWeWork": {
+                "headline": "[Districts / neighborhoods / regions we serve.]",
+                "cards": [
+                    {
+                        "name": "[Location One]",
+                        "blurb": "[One line describing the program active in this location.]"
+                    },
+                    {
+                        "name": "[Location Two]",
+                        "blurb": "[One line describing the program active in this location.]"
+                    },
+                    {
+                        "name": "[Location Three]",
+                        "blurb": "[One line describing the program active in this location.]"
+                    }
+                ]
+            },
+            "getInvolved": {
+                "headline": "Your Support Changes Lives",
+                "body": "Every contribution helps us reach more mothers, children, and families across Kasulu District with health, education, and economic opportunity."
+            },
+            "partners": [
+                "[Partner One]",
+                "[Partner Two]",
+                "[Partner Three]",
+                "[Partner Four]"
+            ]
         },
-        {
-          "name": "[Location Two]",
-          "blurb": "[A rural outreach post bringing mobile clinics and farming training to nearby villages.]"
+        "about": {
+            "title": "About Us — TARUDEREO",
+            "metaDescription": "Our mission, vision, values, and story.",
+            "hero": {
+                "headline": "[Like the symbol in our mark, we lift up those who built our community.]",
+                "lead": "[One or two sentences framing the org's belief and who it serves.]"
+            },
+            "mission": {
+                "headline": "What is TARUDEREO?",
+                "body": "Tanzania Rural Development and Relief Organization (TARUDEREO) is a non-governmental, nonprofit organization improving the living standards of Tanzanians through water and sanitation, community services, natural resource and environmental protection, infrastructure development, and humanitarian assistance."
+            },
+            "vision": {
+                "headline": "[A community where every person we serve is valued and protected.]",
+                "body": "[Expand on the long-term vision for the community or cause.]"
+            },
+            "values": {
+                "headline": "[What guides every program we run.]",
+                "items": [
+                    {
+                        "title": "[Value One]",
+                        "body": "[One-line description of the value in action.]"
+                    },
+                    {
+                        "title": "[Value Two]",
+                        "body": "[One-line description of the value in action.]"
+                    },
+                    {
+                        "title": "[Value Three]",
+                        "body": "[One-line description of the value in action.]"
+                    },
+                    {
+                        "title": "[Value Four]",
+                        "body": "[One-line description of the value in action.]"
+                    }
+                ]
+            },
+            "story": {
+                "headline": "Registered Since 2002, Re-registered in 2023",
+                "body": "Based in Mission Street, Murubona Ward, Kasulu District, Kigoma Region, TARUDEREO is registered by the Ministry of Community Development, Gender, Women and Special Groups under the NGO Act No. 24 (Certificate No. ooNGO/R/5461, issued 29 September 2023)."
+            }
         },
-        {
-          "name": "[Location Three]",
-          "blurb": "[Our newest site, supporting coastal and fishing communities with training and relief programs.]"
+        "contact": {
+            "title": "Contact Us — TARUDEREO",
+            "metaDescription": "Get in touch — funding, volunteering, and partnerships.",
+            "hero": {
+                "headline": "[Get in touch]",
+                "lead": "[One sentence inviting funding, volunteering, or partnership conversations.]"
+            },
+            "reachUs": {
+                "headline": "[Office / Landmark Description]"
+            }
+        },
+        "volunteer": {
+            "title": "Volunteer — TARUDEREO",
+            "metaDescription": "Give your time and skills to support our work.",
+            "hero": {
+                "headline": "[Give your time. Change a life.]",
+                "lead": "[One or two sentences on what volunteering with us looks like and who we're looking for.]"
+            },
+            "whyVolunteer": {
+                "headline": "[Real work, real impact, real community.]",
+                "body": "[Two to three sentences on what volunteers actually do day-to-day, and the difference it makes for the people you serve.]"
+            },
+            "waysToHelp": {
+                "headline": "[Find the role that fits your time and skills.]",
+                "cards": [
+                    {
+                        "name": "[Weekend Programs]",
+                        "blurb": "[Hands-on shifts at our locations — meal prep, tutoring, activity support.]"
+                    },
+                    {
+                        "name": "[Skilled Volunteering]",
+                        "blurb": "[Bring professional skills — medical, legal, design, accounting — on a project basis.]"
+                    },
+                    {
+                        "name": "[Remote & Admin Support]",
+                        "blurb": "[Help from anywhere — data entry, grant research, social media, translation.]"
+                    },
+                    {
+                        "name": "[Event Volunteering]",
+                        "blurb": "[One-off support at fundraisers, community days, and awareness campaigns.]"
+                    }
+                ]
+            },
+            "apply": {
+                "headline": "[Tell us a bit about yourself.]",
+                "body": "[We'll follow up within a week to talk through current openings and next steps.]"
+            }
+        },
+        "donate": {
+            "title": "Donate — TARUDEREO",
+            "metaDescription": "Support our work with a one-time or monthly gift.",
+            "hero": {
+                "headline": "[Your gift goes further than you think.]",
+                "lead": "[One or two sentences on how donations are used and the impact of giving.]"
+            },
+            "impactTiers": {
+                "headline": "[Every amount funds something specific.]",
+                "cards": [
+                    {
+                        "amount": "[$25]",
+                        "blurb": "[What this amount funds — be specific, e.g. a week of school meals for one child.]"
+                    },
+                    {
+                        "amount": "[$50]",
+                        "blurb": "[What this amount funds — be specific, e.g. a month of clean water access for a family.]"
+                    },
+                    {
+                        "amount": "[$100]",
+                        "blurb": "[What this amount funds — be specific, e.g. one full training-program cycle for a young adult.]"
+                    }
+                ]
+            },
+            "give": {
+                "headline": "[Choose an amount and frequency.]",
+                "body": "[One-time gifts help right now; monthly gifts let us plan ahead. Both matter.]"
+            }
+        },
+        "impact": {
+            "title": "Our Impact — TARUDEREO",
+            "metaDescription": "The measurable difference we're making.",
+            "hero": {
+                "headline": "[Making a measurable difference, together.]"
+            },
+            "transformingLives": {
+                "headline": "[Every number represents a real person.]",
+                "body1": "[Two to three sentences translating the stats into human stories — without naming real individuals unless you have consent.]",
+                "body2": "[Optional paragraph on sustainability — how programs are designed to outlast a single funding cycle.]"
+            },
+            "lookingAhead": {
+                "headline": "[By [target year], we aim to [specific, measurable goal].]"
+            }
+        },
+        "locations": {
+            "title": "Locations — TARUDEREO",
+            "metaDescription": "Where we work.",
+            "hero": {
+                "headline": "[Where we work across [region].]"
+            },
+            "cards": [
+                {
+                    "name": "[Location One]",
+                    "blurb": "[Our flagship urban center — daily health screenings, meals, and after-school tutoring.]"
+                },
+                {
+                    "name": "[Location Two]",
+                    "blurb": "[A rural outreach post bringing mobile clinics and farming training to nearby villages.]"
+                },
+                {
+                    "name": "[Location Three]",
+                    "blurb": "[Our newest site, supporting coastal and fishing communities with training and relief programs.]"
+                }
+            ]
+        },
+        "programs": {
+            "title": "Our Programs — TARUDEREO",
+            "metaDescription": "Browse our program areas.",
+            "hero": {
+                "headline": "Seven core objectives guide every program TARUDEREO runs across Kasulu District — from classrooms to clinics to household kitchens."
+            },
+            "cards": [
+                {
+                    "name": "Education Access",
+                    "blurb": "Removing the barriers that keep vulnerable rural children out of school."
+                },
+                {
+                    "name": "Women & Youth Empowerment",
+                    "blurb": "Economic activities and skills development for rural women and youth."
+                },
+                {
+                    "name": "Health & Nutrition",
+                    "blurb": "Maternal health, food security, and disease-awareness campaigns."
+                },
+                {
+                    "name": "Environment & Energy",
+                    "blurb": "Reducing emissions and promoting renewable energy in rural areas."
+                }
+            ],
+            "ctaText": "Want to support a specific program?"
+        },
+        "reports": {
+            "title": "Reports — TARUDEREO",
+            "metaDescription": "Annual reports and financial transparency.",
+            "hero": {
+                "headline": "[Annual Reports & Transparency]",
+                "lead": "[One sentence on your commitment to accountability with donors, partners, and the community.]"
+            },
+            "items": [
+                {
+                    "year": "[Year]",
+                    "title": "[Annual Report [Year]]",
+                    "fileSize": "[File size]",
+                    "href": "#"
+                }
+            ]
+        },
+        "locationDetailTemplate": {
+            "title": "[Location Name] — TARUDEREO",
+            "hero": {
+                "name": "[Location Name]",
+                "blurb": "[One-line description repeated for context.]"
+            },
+            "localPresence": {
+                "headline": "[What we run here.]",
+                "body": "[Two to three sentences on programs active at this location, partners involved, and reach.]"
+            }
+        },
+        "locationDetail1": {
+            "title": "[Location One] — TARUDEREO",
+            "hero": {
+                "name": "[Location One]",
+                "blurb": "[Our flagship urban center — daily health screenings, meals, and after-school tutoring.]"
+            },
+            "localPresence": {
+                "headline": "[A hub for daily services in the city center.]",
+                "body": "[Two to three sentences on programs active at this location — e.g., drop-in health screenings, meal distribution, and after-school tutoring running most weekdays, plus which local partners help staff it.]"
+            }
+        },
+        "locationDetail2": {
+            "title": "[Location Two] — TARUDEREO",
+            "hero": {
+                "name": "[Location Two]",
+                "blurb": "[A rural outreach post bringing mobile clinics and farming training to nearby villages.]"
+            },
+            "localPresence": {
+                "headline": "[Bringing services closer to home for outlying communities.]",
+                "body": "[Two to three sentences on programs active at this location — e.g., a monthly mobile clinic visit, agricultural training sessions, and a weekly meeting space run in partnership with village leaders.]"
+            }
+        },
+        "locationDetail3": {
+            "title": "[Location Three] — TARUDEREO",
+            "hero": {
+                "name": "[Location Three]",
+                "blurb": "[Our newest site, supporting coastal and fishing communities with training and relief programs.]"
+            },
+            "localPresence": {
+                "headline": "[Extending our reach along the coast.]",
+                "body": "[Two to three sentences on programs active at this location — e.g., vocational training for young adults, a small community library, and seasonal relief support during storm season.]"
+            }
+        },
+        "programDetailTemplate": {
+            "title": "[Program Name] — TARUDEREO",
+            "hero": {
+                "name": "[Program Name]",
+                "blurb": "[One-line summary shown in the card, repeated here for context.]"
+            },
+            "howItWorks": {
+                "headline": "[What this program does, day to day.]",
+                "body1": "[Two to three sentences describing activities, frequency, and who runs them.]",
+                "body2": "[Optional second paragraph — impact story, numbers, or a specific example.]"
+            }
+        },
+        "programDetail1": {
+            "title": "Education Access — TARUDEREO",
+            "hero": {
+                "name": "Education Access",
+                "blurb": "Removing the barriers that keep vulnerable rural children out of school."
+            },
+            "howItWorks": {
+                "headline": "Supporting Young Mothers Back to School",
+                "body1": "TARUDEREO trained community members to follow up on the progress and wellbeing of young single mothers who have returned to school — part of our work removing the barriers that keep vulnerable rural children and youth out of school.",
+                "body2": "Kasulu District, Kigoma Region."
+            }
+        },
+        "programDetail2": {
+            "title": "Women & Youth Empowerment — TARUDEREO",
+            "hero": {
+                "name": "Women & Youth Empowerment",
+                "blurb": "Economic activities and skills development for rural women and youth."
+            },
+            "howItWorks": {
+                "headline": "[Building skills that open doors.]",
+                "body1": "[Two to three sentences describing activities, frequency, and who runs them — e.g., after-school tutoring schedule, volunteer teachers, and learning materials provided to students.]",
+                "body2": "[Optional second paragraph — e.g., a specific student or class success story.]"
+            }
+        },
+        "programDetail3": {
+            "title": "Health & Nutrition — TARUDEREO",
+            "hero": {
+                "name": "Health & Nutrition",
+                "blurb": "Maternal health, food security, and disease-awareness campaigns."
+            },
+            "howItWorks": {
+                "headline": "Maternal & Safe Childbirth Awareness",
+                "body1": "TARUDEREO disseminated IEC (information, education and communication) materials across Kasulu District to strengthen community awareness of maternal health services and safe childbirth practices.",
+                "body2": "Kasulu District, Kigoma Region."
+            }
+        },
+        "programDetail4": {
+            "title": "Environment & Energy — TARUDEREO",
+            "hero": {
+                "name": "Environment & Energy",
+                "blurb": "Reducing emissions and promoting renewable energy in rural areas."
+            },
+            "howItWorks": {
+                "headline": "[Ready to respond when disaster strikes.]",
+                "body1": "[Two to three sentences describing activities, frequency, and who runs them — e.g., emergency kits distributed, shelter coordination, and partnerships with local disaster-response teams.]",
+                "body2": "[Optional second paragraph — e.g., a recent response effort and its outcome.]"
+            }
         }
-      ]
-    },
-    "programs": {
-      "title": "Our Programs — TARUDEREO",
-      "metaDescription": "Browse our program areas.",
-      "hero": {
-        "headline": "Seven core objectives guide every program TARUDEREO runs across Kasulu District — from classrooms to clinics to household kitchens."
-      },
-      "cards": [
-        {
-          "name": "Education Access",
-          "blurb": "Removing the barriers that keep vulnerable rural children out of school."
-        },
-        {
-          "name": "Women & Youth Empowerment",
-          "blurb": "Economic activities and skills development for rural women and youth."
-        },
-        {
-          "name": "Health & Nutrition",
-          "blurb": "Maternal health, food security, and disease-awareness campaigns."
-        },
-        {
-          "name": "Environment & Energy",
-          "blurb": "Reducing emissions and promoting renewable energy in rural areas."
-        }
-      ],
-      "ctaText": "Want to support a specific program?"
-    },
-    "reports": {
-      "title": "Reports — TARUDEREO",
-      "metaDescription": "Annual reports and financial transparency.",
-      "hero": {
-        "headline": "[Annual Reports & Transparency]",
-        "lead": "[One sentence on your commitment to accountability with donors, partners, and the community.]"
-      },
-      "items": [
-        {
-          "year": "[Year]",
-          "title": "[Annual Report [Year]]",
-          "fileSize": "[File size]",
-          "href": "#"
-        }
-      ]
-    },
-    "locationDetailTemplate": {
-      "title": "[Location Name] — TARUDEREO",
-      "hero": {
-        "name": "[Location Name]",
-        "blurb": "[One-line description repeated for context.]"
-      },
-      "localPresence": {
-        "headline": "[What we run here.]",
-        "body": "[Two to three sentences on programs active at this location, partners involved, and reach.]"
-      }
-    },
-    "locationDetail1": {
-      "title": "[Location One] — TARUDEREO",
-      "hero": {
-        "name": "[Location One]",
-        "blurb": "[Our flagship urban center — daily health screenings, meals, and after-school tutoring.]"
-      },
-      "localPresence": {
-        "headline": "[A hub for daily services in the city center.]",
-        "body": "[Two to three sentences on programs active at this location — e.g., drop-in health screenings, meal distribution, and after-school tutoring running most weekdays, plus which local partners help staff it.]"
-      }
-    },
-    "locationDetail2": {
-      "title": "[Location Two] — TARUDEREO",
-      "hero": {
-        "name": "[Location Two]",
-        "blurb": "[A rural outreach post bringing mobile clinics and farming training to nearby villages.]"
-      },
-      "localPresence": {
-        "headline": "[Bringing services closer to home for outlying communities.]",
-        "body": "[Two to three sentences on programs active at this location — e.g., a monthly mobile clinic visit, agricultural training sessions, and a weekly meeting space run in partnership with village leaders.]"
-      }
-    },
-    "locationDetail3": {
-      "title": "[Location Three] — TARUDEREO",
-      "hero": {
-        "name": "[Location Three]",
-        "blurb": "[Our newest site, supporting coastal and fishing communities with training and relief programs.]"
-      },
-      "localPresence": {
-        "headline": "[Extending our reach along the coast.]",
-        "body": "[Two to three sentences on programs active at this location — e.g., vocational training for young adults, a small community library, and seasonal relief support during storm season.]"
-      }
-    },
-    "programDetailTemplate": {
-      "title": "[Program Name] — TARUDEREO",
-      "hero": {
-        "name": "[Program Name]",
-        "blurb": "[One-line summary shown in the card, repeated here for context.]"
-      },
-      "howItWorks": {
-        "headline": "[What this program does, day to day.]",
-        "body1": "[Two to three sentences describing activities, frequency, and who runs them.]",
-        "body2": "[Optional second paragraph — impact story, numbers, or a specific example.]"
-      }
-    },
-    "programDetail1": {
-      "title": "Education Access — TARUDEREO",
-      "hero": {
-        "name": "Education Access",
-        "blurb": "Removing the barriers that keep vulnerable rural children out of school."
-      },
-      "howItWorks": {
-        "headline": "Supporting Young Mothers Back to School",
-        "body1": "TARUDEREO trained community members to follow up on the progress and wellbeing of young single mothers who have returned to school — part of our work removing the barriers that keep vulnerable rural children and youth out of school.",
-        "body2": "Kasulu District, Kigoma Region."
-      }
-    },
-    "programDetail2": {
-      "title": "Women & Youth Empowerment — TARUDEREO",
-      "hero": {
-        "name": "Women & Youth Empowerment",
-        "blurb": "Economic activities and skills development for rural women and youth."
-      },
-      "howItWorks": {
-        "headline": "[Building skills that open doors.]",
-        "body1": "[Two to three sentences describing activities, frequency, and who runs them — e.g., after-school tutoring schedule, volunteer teachers, and learning materials provided to students.]",
-        "body2": "[Optional second paragraph — e.g., a specific student or class success story.]"
-      }
-    },
-    "programDetail3": {
-      "title": "Health & Nutrition — TARUDEREO",
-      "hero": {
-        "name": "Health & Nutrition",
-        "blurb": "Maternal health, food security, and disease-awareness campaigns."
-      },
-      "howItWorks": {
-        "headline": "Maternal & Safe Childbirth Awareness",
-        "body1": "TARUDEREO disseminated IEC (information, education and communication) materials across Kasulu District to strengthen community awareness of maternal health services and safe childbirth practices.",
-        "body2": "Kasulu District, Kigoma Region."
-      }
-    },
-    "programDetail4": {
-      "title": "Environment & Energy — TARUDEREO",
-      "hero": {
-        "name": "Environment & Energy",
-        "blurb": "Reducing emissions and promoting renewable energy in rural areas."
-      },
-      "howItWorks": {
-        "headline": "[Ready to respond when disaster strikes.]",
-        "body1": "[Two to three sentences describing activities, frequency, and who runs them — e.g., emergency kits distributed, shelter coordination, and partnerships with local disaster-response teams.]",
-        "body2": "[Optional second paragraph — e.g., a recent response effort and its outcome.]"
-      }
     }
-  }
 }
