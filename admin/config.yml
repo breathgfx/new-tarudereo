@@ -1,0 +1,789 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Decap writes back to this exact file on every save, in full — the field
+# tree below mirrors content.json's structure exactly (auto-generated from
+# it) so nothing gets dropped. If you add a new field to content.json by
+# hand later, add the matching field here too, or the CMS editor won't see
+# (or will silently drop, on save) that field the next time someone edits
+# and saves this file from /admin.
+media_folder: "img"
+public_folder: "/img"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - file: "content.json"
+        label: "All Site Content"
+        name: "site_content"
+        fields:
+        - label: Site-wide (used on every page)
+          name: site
+          widget: object
+          collapsed: false
+          fields:
+            - label: Org Name
+              name: orgName
+              widget: string
+            - label: Org Name Full
+              name: orgNameFull
+              widget: string
+            - label: Tagline
+              name: tagline
+              widget: string
+            - label: Mission Summary
+              name: missionSummary
+              widget: string
+            - label: Region
+              name: region
+              widget: string
+            - label: Email
+              name: email
+              widget: string
+            - label: Phone
+              name: phone
+              widget: string
+            - label: Address
+              name: address
+              widget: string
+            - label: City Region Country
+              name: cityRegionCountry
+              widget: string
+            - label: Newsletter Blurb
+              name: newsletterBlurb
+              widget: text
+            - label: Stats
+              name: stats
+              widget: list
+              summary: "{{fields.label}}"
+              fields:
+                - label: Label
+                  name: label
+                  widget: string
+        - label: Pages
+          name: pages
+          widget: object
+          collapsed: false
+          fields:
+            - label: Home
+              name: index
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Eyebrow
+                      name: eyebrow
+                      widget: string
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Lead
+                      name: lead
+                      widget: text
+                - label: About
+                  name: about
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+                - label: Where We Work
+                  name: whereWeWork
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Cards
+                      name: cards
+                      widget: list
+                      summary: "{{fields.name}}"
+                      fields:
+                        - label: Name
+                          name: name
+                          widget: string
+                        - label: Blurb
+                          name: blurb
+                          widget: text
+                - label: Get Involved
+                  name: getInvolved
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+                - label: Partners
+                  name: partners
+                  widget: list
+                  field:
+                    label: Item
+                    name: value
+                    widget: string
+            - label: About
+              name: about
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Lead
+                      name: lead
+                      widget: text
+                - label: Mission
+                  name: mission
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+                - label: Vision
+                  name: vision
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+                - label: Values
+                  name: values
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Items
+                      name: items
+                      widget: list
+                      summary: "{{fields.title}}"
+                      fields:
+                        - label: Title
+                          name: title
+                          widget: string
+                        - label: Body
+                          name: body
+                          widget: text
+                - label: Story
+                  name: story
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+            - label: Contact
+              name: contact
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Lead
+                      name: lead
+                      widget: text
+                - label: Reach Us
+                  name: reachUs
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+            - label: Volunteer
+              name: volunteer
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Lead
+                      name: lead
+                      widget: text
+                - label: Why Volunteer
+                  name: whyVolunteer
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+                - label: Ways To Help
+                  name: waysToHelp
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Cards
+                      name: cards
+                      widget: list
+                      summary: "{{fields.name}}"
+                      fields:
+                        - label: Name
+                          name: name
+                          widget: string
+                        - label: Blurb
+                          name: blurb
+                          widget: text
+                - label: Apply
+                  name: apply
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+            - label: Donate
+              name: donate
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Lead
+                      name: lead
+                      widget: text
+                - label: Impact Tiers
+                  name: impactTiers
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Cards
+                      name: cards
+                      widget: list
+                      summary: "{{fields.amount}}"
+                      fields:
+                        - label: Amount
+                          name: amount
+                          widget: string
+                        - label: Blurb
+                          name: blurb
+                          widget: text
+                - label: Give
+                  name: give
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+            - label: Impact
+              name: impact
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                - label: Transforming Lives
+                  name: transformingLives
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body1
+                      name: body1
+                      widget: text
+                    - label: Body2
+                      name: body2
+                      widget: text
+                - label: Looking Ahead
+                  name: lookingAhead
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+            - label: Locations (listing)
+              name: locations
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                - label: Cards
+                  name: cards
+                  widget: list
+                  summary: "{{fields.name}}"
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+            - label: Programs (listing)
+              name: programs
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                - label: Cards
+                  name: cards
+                  widget: list
+                  summary: "{{fields.name}}"
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: Cta Text
+                  name: ctaText
+                  widget: string
+            - label: Reports
+              name: reports
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Meta Description
+                  name: metaDescription
+                  widget: text
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Lead
+                      name: lead
+                      widget: text
+                - label: Items
+                  name: items
+                  widget: list
+                  summary: "{{fields.year}}"
+                  fields:
+                    - label: Year
+                      name: year
+                      widget: string
+                    - label: Title
+                      name: title
+                      widget: string
+                    - label: File Size
+                      name: fileSize
+                      widget: string
+                    - label: Href
+                      name: href
+                      widget: string
+            - label: Location Detail — master template
+              name: locationDetailTemplate
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: Local Presence
+                  name: localPresence
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+            - label: Location Detail 1
+              name: locationDetail1
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: Local Presence
+                  name: localPresence
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+            - label: Location Detail 2
+              name: locationDetail2
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: Local Presence
+                  name: localPresence
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+            - label: Location Detail 3
+              name: locationDetail3
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: Local Presence
+                  name: localPresence
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body
+                      name: body
+                      widget: text
+            - label: Program Detail — master template
+              name: programDetailTemplate
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: How It Works
+                  name: howItWorks
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body1
+                      name: body1
+                      widget: text
+                    - label: Body2
+                      name: body2
+                      widget: text
+            - label: Program Detail 1
+              name: programDetail1
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: How It Works
+                  name: howItWorks
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body1
+                      name: body1
+                      widget: text
+                    - label: Body2
+                      name: body2
+                      widget: text
+            - label: Program Detail 2
+              name: programDetail2
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: How It Works
+                  name: howItWorks
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body1
+                      name: body1
+                      widget: text
+                    - label: Body2
+                      name: body2
+                      widget: text
+            - label: Program Detail 3
+              name: programDetail3
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: How It Works
+                  name: howItWorks
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body1
+                      name: body1
+                      widget: text
+                    - label: Body2
+                      name: body2
+                      widget: text
+            - label: Program Detail 4
+              name: programDetail4
+              widget: object
+              collapsed: true
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Hero
+                  name: hero
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Name
+                      name: name
+                      widget: string
+                    - label: Blurb
+                      name: blurb
+                      widget: text
+                - label: How It Works
+                  name: howItWorks
+                  widget: object
+                  collapsed: true
+                  fields:
+                    - label: Headline
+                      name: headline
+                      widget: string
+                    - label: Body1
+                      name: body1
+                      widget: text
+                    - label: Body2
+                      name: body2
+                      widget: text
