@@ -215,11 +215,20 @@ p { margin: 0 0 1em; color: var(--stone); }
 #donate, #volunteer { scroll-margin-top: 104px; }
 .contact-form { display: grid; gap: 16px; }
 .contact-form label { font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; display: block; }
-.contact-form input, .contact-form textarea {
+.contact-form input, .contact-form textarea, .contact-form select {
   width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius);
-  font-family: var(--font-body); background: var(--paper-soft); color: var(--ink);
+  font-family: var(--font-body); font-size: 0.95rem; background: var(--paper-soft); color: var(--ink);
 }
 .contact-form textarea { min-height: 130px; resize: vertical; }
+.contact-form select {
+  appearance: none; -webkit-appearance: none; -moz-appearance: none;
+  cursor: pointer; padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2316231F' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center;
+}
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+  outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(46, 111, 94, 0.15);
+}
 .honeypot { position: absolute; left: -9999px; }
 
 /* ---- responsive ---- */
