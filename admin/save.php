@@ -23,6 +23,11 @@ if (!is_array($content) || !isset($content['site'], $content['pages'])) {
 $imageSlots = [
     'logo_upload' => [dirname(__DIR__) . '/img/logo.png', 'png'],
     'hero_upload' => [dirname(__DIR__) . '/img/hero-maternal-health.jpg', 'jpg'],
+    'focus_environment_upload' => [dirname(__DIR__) . '/img/focus-environment.jpg', 'jpg'],
+    'focus_health_upload' => [dirname(__DIR__) . '/img/focus-health.jpg', 'jpg'],
+    'focus_agriculture_upload' => [dirname(__DIR__) . '/img/focus-agriculture.jpg', 'jpg'],
+    'focus_education_upload' => [dirname(__DIR__) . '/img/focus-education.jpg', 'jpg'],
+    'focus_microeconomic_upload' => [dirname(__DIR__) . '/img/focus-microeconomic.jpg', 'jpg'],
 ];
 foreach ($imageSlots as $fieldName => [$targetPath, $format]) {
     if (!empty($_FILES[$fieldName]['tmp_name']) && is_uploaded_file($_FILES[$fieldName]['tmp_name'])) {

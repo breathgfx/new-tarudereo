@@ -78,10 +78,35 @@ $cacheBust = time();
       <img src="../img/hero-maternal-health.jpg?<?= $cacheBust ?>" alt="Current hero photo" class="admin-preview admin-preview-wide">
       <input type="file" id="hero_upload" name="hero_upload" accept="image/png,image/jpeg,image/webp">
     </div>
-    <p style="font-size:0.82rem; color:var(--stone); margin:0;">
+    <p style="font-size:0.82rem; color:var(--stone); margin-bottom:20px;">
       Uploading a new photo replaces the existing one in place — no other changes needed anywhere else on the site.
-      Adding photos to program or location cards (currently plain color blocks) isn't wired up yet; ask for that once you have real photos to use there.
     </p>
+    <h3 style="font-size:0.95rem; margin-bottom:14px;">Focus Area Photos</h3>
+    <p style="font-size:0.82rem; color:var(--stone);">
+      Shown on the Home, Focus Areas, and Programmes pages. Environment and Micro-Economic
+      Development don't have a photo yet — upload one any time to add it.
+    </p>
+    <?php
+    $focusAreaSlots = [
+        'focus_environment_upload' => ['img/focus-environment.jpg', 'Environment'],
+        'focus_health_upload' => ['img/focus-health.jpg', 'Health'],
+        'focus_agriculture_upload' => ['img/focus-agriculture.jpg', 'Agriculture'],
+        'focus_education_upload' => ['img/focus-education.jpg', 'Education'],
+        'focus_microeconomic_upload' => ['img/focus-microeconomic.jpg', 'Micro-Economic Development'],
+    ];
+    foreach ($focusAreaSlots as $fieldName => [$relPath, $label]):
+        $absPath = dirname(__DIR__) . '/' . $relPath;
+    ?>
+    <div class="field">
+      <label for="<?= htmlspecialchars($fieldName) ?>"><?= htmlspecialchars($label) ?></label>
+      <?php if (file_exists($absPath)): ?>
+        <img src="../<?= htmlspecialchars($relPath) ?>?<?= $cacheBust ?>" alt="Current <?= htmlspecialchars($label) ?> photo" class="admin-preview">
+      <?php else: ?>
+        <div class="admin-preview" style="display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:var(--stone); text-align:center; border-radius:8px;">No photo yet</div>
+      <?php endif; ?>
+      <input type="file" id="<?= htmlspecialchars($fieldName) ?>" name="<?= htmlspecialchars($fieldName) ?>" accept="image/png,image/jpeg,image/webp">
+    </div>
+    <?php endforeach; ?>
   </section>
 
   <section class="admin-section">
