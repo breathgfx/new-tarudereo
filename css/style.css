@@ -4,18 +4,16 @@
    ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap');
-
 :root {
-  /* ---- brand tokens: change these per-site ---- */
-  --ink: #16231F;          /* deep forest-black, primary text/bg */
-  --paper: #F1ECDF;        /* warm parchment, primary bg */
-  --paper-soft: #FAF7EF;   /* lighter card bg */
-  --teal: #2E6F5E;         /* primary accent */
-  --teal-dark: #1F4F42;
-  --ochre: #C97A3A;        /* secondary accent (CTAs) */
-  --olive: #8B9A46;        /* tertiary accent */
-  --stone: #6B6558;        /* muted text */
-  --line: rgba(22, 35, 31, 0.14);
+  --ink: #1B2026;         /* Dark charcoal/navy, primary text/bg */
+  --paper: #FFFFFF;       /* Pure white, primary bg */
+  --paper-soft: #F4F6F8;  /* Subtle off-white/light gray, card bg */
+  --teal: #1EB53A;        /* Tanzanian green (primary accent) */
+  --teal-dark: #158028;   /* Darker green for hover states */
+  --ochre: #077a2a;       /* Tanzanian gold/yellow (secondary accent / CTAs) */
+  --olive: #00A3E0;       /* Tanzanian cyan/light blue (tertiary accent) */
+  --stone: #5A626A;       /* Muted text */
+  --line: rgba(27, 32, 38, 0.12); /* Subtle divider lines based on --ink */
 
   /* ---- type ---- */
   --font-display: 'Fraunces', Georgia, serif;
@@ -117,8 +115,8 @@ p { margin: 0 0 1em; color: var(--stone); }
   color: #fff; padding: 120px 0 100px;
 }
 .hero .roots { position: absolute; inset: 0; opacity: 0.18; pointer-events: none; }
-.hero-content { position: relative; max-width: 640px; }
-.hero p.lead { color: rgba(255,255,255,0.78); font-size: 1.12rem; max-width: 480px; }
+.hero-content { position: relative; max-width: 1020px; }
+.hero p.lead { color: rgba(255,255,255,0.78); font-size: 1.12rem; max-width: 720px; }
 .hero .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
 
 /* ---- root divider (signature element) ---- */
